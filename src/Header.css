@@ -1,0 +1,115 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    z-index: 100;
+    width: 100%;
+    padding: 15px 0;
+}
+
+.header__icon{
+    object-fit: contain;
+    height: 100px;
+    margin-left: 80px;
+    height: 30px;
+}
+
+.header__center{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    margin-left: 170px;
+    max-width: fit-content;
+    padding: 10px;
+    height: 25px;
+    border: 1px solid lightgray;
+    border-radius: 999px;
+}
+
+.header__center > input{
+    border: none;
+    width: 300px;
+    padding: 10px;
+    outline-width: 0;
+}
+.header__center > input:hover, .header__right > p:hover, .header__rightIcon:hover{
+    cursor: pointer;
+}
+
+.header__centerIcon{
+    background-color: #fe3c43;
+    padding: 4px 7px;
+    border-radius: 99px;
+    color: #fff;
+    width: 18px !important;
+}
+     
+.header__right{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 18vw;
+    margin-right: 80px;
+}
+.header__right > p {
+    padding: 10px 15px;
+    border-radius: 99px;
+    transition-duration: .3s;
+}
+.header__right > p:hover {
+    background-color: rgb(241, 241, 241);
+    padding: 10px 15px;
+    border-radius: 99px;
+}
+
+.header__rightLangIcon{
+    width: 20px !important;
+}
+
+.header__rightIcon{
+    display: flex;
+    align-items: center;
+    border: 1px solid lightgray;
+    border-radius: 99px;
+    padding: 3px 8px;
+    transition-duration: .3s;
+    margin-left: 15px;
+}
+.header__rightIcon:hover {
+    box-shadow: 1px 2px 2px 1px lightgray;
+}
+
+.header__rightIconAccount {
+    width: 35px !important;
+    height: 35px !important;
+    opacity: .5 !important;
+}
+
+@media screen and (max-width: 575px) {
+    .header {
+        width: 116.7%; /* Set width to 100% for responsiveness */
+        padding: 10px;
+    }
+
+    .header__icon {
+        margin-left: 0;
+    }
+
+    .header__center {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .header__right {
+        width: 100%;
+        margin: 10px 0;
+        justify-content: space-between;
+    }
+
+    .header__rightIcon {
+        padding: 2px 3px;
+    }
+}

@@ -1,0 +1,38 @@
+.home__section {
+    display: flex;
+    padding: 30px;
+}
+
+.home__priceDisplay{
+    display: flex;
+    align-items: center;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    padding: 15px 10px;
+    width: 40vw;
+    margin: 40px auto 0;
+    justify-content: space-between;
+}
+
+.home__priceDisplayText {
+    display: flex;
+    align-items: center;
+}
+
+.home__priceDisplayText > p {
+    margin-right: 10px;
+    font-weight: 600;
+}
+
+.home__priceDisplayText > span {
+    display: flex;
+    opacity: .5;
+}
+
+.home__priceDisplayText > span > p {
+    margin-right: 10px;
+}
+
+.home__priceDisplayToggle {
+    opacity: .4 !important;
+}

@@ -1,0 +1,73 @@
+.headerOptions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid lightgray;
+    position: sticky;
+    top: calc(8.3% + var(--header-top-margin, 15px)); /* Adjust the values as needed */
+    background-color: #fff;
+    z-index: 100;
+}
+  
+.headerOptions__container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap; 
+    margin: 0 50px;
+    margin-top: var(--header-top-margin, 12px);
+
+    scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer and Edge */
+
+  /* Reduce the scrollbar height */
+  &::-webkit-scrollbar {
+    height: 0px; /* Adjust the height as needed */
+  }
+}
+
+.headerOptions__option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 50px;
+    padding-bottom: 12px;
+    opacity: .6;
+    transition-duration: .3s;
+}
+.headerOptions__option:hover {
+    opacity: 1;
+}
+.headerOptions__option:active,
+.headerOptions__option:focus {
+  border-bottom: 2px solid black;
+  outline: none; /* Remove default focus outline */
+}
+
+
+.headerOptions__option > p {
+    font-size: 12px;
+    text-transform: capitalize;
+    margin-top: 8px;
+}
+
+
+
+.headerOptions__filter {
+    display: flex;
+    align-items: center;
+    border: 1px solid lightgray;
+    padding: 11px 15px;
+    border-radius: 15px;
+    margin-right: 80px;
+}
+.headerOptions__filter > p {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.headerOptions__filterIcon {
+    width: 15px !important;
+    margin-right: 8px;
+}

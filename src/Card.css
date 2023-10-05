@@ -1,0 +1,72 @@
+.card {
+    margin: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 6px 18px -9px rgba(0, 0, 0, 0.75);
+    transition: transform .1s ease-in;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: scale(1.07);
+}
+
+.card__imageInfo {
+    position: relative;
+}
+  
+.card__imageInfo > img {
+    object-fit: fill;
+    min-width: 300px;
+    min-height: 250px;
+    width: 100%;
+}
+
+.card__imageFav {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    color: #f5f3f3;
+}
+
+.card__info {
+    margin-top: -9px;
+    border-radius: 10px;
+    padding: 20px;
+    padding-top: 20px;
+    border: 1;
+}
+
+.card__info > h3 {
+    font-size: 15px;
+    font-weight: 300;
+    opacity: .6;
+}
+
+.card__info > h4 {
+    font-weight: 300;
+    margin: 8px 0;
+    margin-top: 15px;
+}
+
+
+.card__infoTop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card__infoTop > h2 {
+    font-size: 14px;
+}
+
+.card__infoRating {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
+.card__infoRatingIcon {
+    width: 16px !important;
+    margin-bottom: 2px;
+}
